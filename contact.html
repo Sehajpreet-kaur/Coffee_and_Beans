@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sehajpreet Kaur">
+    <meta name="description" content="Contact information of Coffee and Beans.">
+    <title>Contact Us</title>
+    <link rel="icon" href="image/html.png" type="image">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header" >
+        <h1 class="header__h1">Coffee and Beans</h1>
+        
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="hours.html">Cafe Hours</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            <!-- <a href="Happy.html" target="_main">Happy Customers</a>
+            -->
+            </nav>
+     </header>
+
+     <section class="hero">
+        <figure>
+            <img src="image/pexels-zvolskiy-2253643.jpg" alt="Coffee delicioso!" height="1000" weight="667">
+                
+            <figcaption class="offscreen">Try these delicious coffees</figcaption>
+        </figure>
+     </section>
+    
+    <main class="main">
+        <article class="main__article">
+            <h2>Our Location</h2>
+            <address>
+                55 Ranjit Avenue, Amritsar <br>
+                Punjab, Ph.55555-55555
+                <br><br>
+                Phone: <a href="tel:+5555555555">55555-55555</a>
+            </address>
+        </article>
+        <br>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Contact Us</h2>
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send us a Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Username: </label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" autocomplete="on" required="true" >
+                    </p>
+                    <p class="contact_p">
+                        <label class="contact__label" for="email">Email:</label> 
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" autocomplete="on" required="true" >
+                    </p>
+                    <p class="contact_p">
+                        <label class="contact__label" id="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10" placeholder="Type your message here."></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Submit</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+        
+    </main>
+        <footer class="footer">
+         <p>
+            <span class="nowrap">Copyright &copy;<time id="year"></time></span>
+            <span class="nowrap">Coffee and Beans</span>
+        </p>
+    </footer>
+</body>
+</html>
